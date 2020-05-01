@@ -1,0 +1,61 @@
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #ffffff;
+}
+i.fas {
+  color: #ffffff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 991.98px) {
+  .top-name-header {
+    justify-content: center;
+  }
+}
+.top-header-resume {
+  background: #25373d;
+  padding: 30px 0;
+}
+.top-header-resume .photo-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.top-header-resume .photo-box img {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+.top-header-resume .name-header h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.top-header-resume .name-header h3 {
+  font-size: 3.5rem;
+}
+.top-header-resume .name-header p {
+  font-size: 2em;
+}
+@media (max-width: 991.98px) {
+  .top-header-resume .name-header {
+    text-align: center;
+  }
+}
+.aside {
+  background: #25373d;
+}
+.aside i {
+  font-size: 5rem;
+}
