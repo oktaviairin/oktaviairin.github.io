@@ -7,6 +7,9 @@
 .back-secondary3 {
   background: #3a8dd1;
 }
+.back-secondary4 {
+  background: #d13aa4;
+}
 .color-secondary1 {
   color: #ff7472;
 }
@@ -16,11 +19,19 @@
 .color-secondary3 {
   color: #3a8dd1;
 }
+.color-secondary4 {
+  color: #d13aa4;
+}
 html {
   font-size: 62.5%;
 }
 body {
   font-family: "Roboto", sans-serif;
+  background: #dddddd;
+}
+.container {
+  padding: 0;
+  background: #ffffff;
 }
 h1,
 h2,
@@ -84,6 +95,7 @@ i.fas {
 .aside {
   background: #25373d;
   color: #ffffff;
+  height: 100%;
 }
 .aside i {
   font-size: 4rem;
@@ -142,4 +154,49 @@ i.fas {
 }
 .aside .block-aside .block-contact .block .text-contact p {
   font-size: 1.4rem;
+}
+.content-resume {
+  padding: 10px 30px 10px 0;
+  color: #000000;
+}
+@media (max-width: 991.98px) {
+  .content-resume {
+    padding: 10px 0;
+  }
+}
+.content-resume .content-block {
+  margin: 0 0 15px;
+}
+.content-resume .content-block .content-head {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-resume .content-block .content-head .title-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+.content-resume .content-block .content-head .title-icon i {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.content-resume .content-block .content-body {
+  padding: 10px 20px;
+}
+.content-resume .content-block .content-body .body-template {
+  margin: 0 0 10px;
+}
+.content-resume .content-block .content-body .body-template p.body-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.content-resume .content-block .content-body .body-template p.body-subtitle {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.content-resume .content-block .content-body .body-template p.body-subsubtitle {
+  font-size: 1.4rem;
+}
+.content-resume .content-block .content-body .body-template .description {
+  padding: 5px 0;
 }

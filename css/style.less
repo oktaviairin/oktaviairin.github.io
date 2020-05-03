@@ -30,6 +30,7 @@
 @secondary1: #ff7472;
 @secondary2: #acc73f;
 @secondary3: #3a8dd1;
+@secondary4: #d13aa4;
 
 .back-secondary1 {
   background: @secondary1;
@@ -40,6 +41,9 @@
 .back-secondary3 {
   background: @secondary3;
 }
+.back-secondary4 {
+  background: @secondary4;
+}
 .color-secondary1 {
   color: @secondary1;
 }
@@ -49,6 +53,9 @@
 .color-secondary3 {
   color: @secondary3;
 }
+.color-secondary4 {
+  color: @secondary4;
+}
 
 html {
   font-size: 62.5%;
@@ -56,6 +63,12 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #dddddd;
+}
+
+.container {
+  padding: 0;
+  background: @white;
 }
 
 h1,
@@ -129,6 +142,7 @@ i {
 .aside {
   background: @primary;
   color: @white;
+  height: 100%;
   i {
     font-size: 4rem;
   }
@@ -194,6 +208,57 @@ i {
           p {
             font-size: 1.4rem;
           }
+        }
+      }
+    }
+  }
+}
+
+.content-resume {
+  padding: 10px 30px 10px 0;
+  @media (max-width: 991.98px) {
+    padding: 10px 0;
+  }
+  color: @black;
+  .content-block {
+    margin: 0 0 15px;
+    .content-head {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      .title-content {
+        h1 {
+          font-size: 3rem;
+          color: @white;
+        }
+      }
+      .title-icon {
+        i {
+          color: @white;
+          font-size: 4rem;
+        }
+      }
+    }
+    .content-body {
+      padding: 10px 20px;
+      .body-template {
+        margin: 0 0 10px;
+        p {
+          &.body-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            // line-height: 26px;
+          }
+          &.body-subtitle {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+          }
+          &.body-subsubtitle {
+            font-size: 1.4rem;
+          }
+        }
+        .description {
+          padding: 5px 0;
         }
       }
     }
