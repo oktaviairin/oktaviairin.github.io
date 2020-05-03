@@ -1,5 +1,26 @@
+.back-secondary1 {
+  background: #ff7472;
+}
+.back-secondary2 {
+  background: #acc73f;
+}
+.back-secondary3 {
+  background: #3a8dd1;
+}
+.color-secondary1 {
+  color: #ff7472;
+}
+.color-secondary2 {
+  color: #acc73f;
+}
+.color-secondary3 {
+  color: #3a8dd1;
+}
 html {
   font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -8,13 +29,19 @@ h4,
 h5,
 h6,
 p {
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 i.fas {
   color: #ffffff;
 }
-body {
-  font-family: "Roboto", sans-serif;
+.adobe-sprites {
+  background-image: url("/images/adobe-sprites.png");
+}
+.adobe-sprites.photoshop {
+  background-position: 0 0;
+  width: 100px;
+  height: 100px;
 }
 @media (max-width: 991.98px) {
   .top-name-header {
@@ -24,6 +51,7 @@ body {
 .top-header-resume {
   background: #25373d;
   padding: 30px 0;
+  color: #ffffff;
 }
 .top-header-resume .photo-box {
   position: relative;
@@ -55,7 +83,63 @@ body {
 }
 .aside {
   background: #25373d;
+  color: #ffffff;
 }
 .aside i {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+.aside .block-aside {
+  padding: 0 0 25px;
+}
+.aside .block-aside .block-head {
+  padding: 0 40px;
+  margin: 0 0 25px;
+  position: relative;
+}
+.aside .block-aside .block-head.head1::after {
+  border-color: #ff7472 transparent transparent transparent;
+}
+.aside .block-aside .block-head.head2::after {
+  border-color: #acc73f transparent transparent transparent;
+}
+.aside .block-aside .block-head.head3::after {
+  border-color: #3a8dd1 transparent transparent transparent;
+}
+.aside .block-aside .block-head::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 12%;
+  border-width: 25px;
+  border-style: solid;
+  border-color: #ff7472 transparent transparent transparent;
+}
+.aside .block-aside .block-head p {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.aside .block-aside .block-profile {
+  padding: 20px 40px 5px;
+}
+.aside .block-aside .block-profile p {
+  font-size: 1.4rem;
+}
+.aside .block-aside .block-contact {
+  padding: 10px 0;
+}
+.aside .block-aside .block-contact .block {
+  padding: 5px 40px;
+}
+.aside .block-aside .block-contact .block .img-contact {
+  margin: 0 20px 0 0;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside .block-aside .block-contact .block .img-contact img.img-adobe {
+  width: 100%;
+}
+.aside .block-aside .block-contact .block .text-contact p {
+  font-size: 1.4rem;
 }
