@@ -31,6 +31,7 @@
 @secondary2: #acc73f;
 @secondary3: #3a8dd1;
 @secondary4: #d13aa4;
+@secondary5: #35838d;
 
 .back-secondary1 {
   background: @secondary1;
@@ -44,6 +45,9 @@
 .back-secondary4 {
   background: @secondary4;
 }
+.back-secondary5 {
+  background: @secondary5;
+}
 .color-secondary1 {
   color: @secondary1;
 }
@@ -55,6 +59,9 @@
 }
 .color-secondary4 {
   color: @secondary4;
+}
+.color-secondary5 {
+  color: @secondary5;
 }
 
 html {
@@ -80,12 +87,6 @@ h6,
 p {
   margin: 0;
   padding: 0;
-}
-
-i {
-  &.fas {
-    color: @white;
-  }
 }
 
 .adobe-sprites {
@@ -248,6 +249,14 @@ i {
             font-size: 2.2rem;
             font-weight: bold;
             // line-height: 26px;
+            a {
+              i {
+                color: @primary;
+                &:hover {
+                  color: @secondary2;
+                }
+              }
+            }
           }
           &.body-subtitle {
             font-size: 1.6rem;
@@ -259,6 +268,9 @@ i {
         }
         .description {
           padding: 5px 0;
+          ul, ol {
+            font-size: 1.2rem;
+          }
         }
       }
     }

@@ -10,6 +10,9 @@
 .back-secondary4 {
   background: #d13aa4;
 }
+.back-secondary5 {
+  background: #35838d;
+}
 .color-secondary1 {
   color: #ff7472;
 }
@@ -21,6 +24,9 @@
 }
 .color-secondary4 {
   color: #d13aa4;
+}
+.color-secondary5 {
+  color: #35838d;
 }
 html {
   font-size: 62.5%;
@@ -42,9 +48,6 @@ h6,
 p {
   margin: 0;
   padding: 0;
-}
-i.fas {
-  color: #ffffff;
 }
 .adobe-sprites {
   background-image: url("/images/adobe-sprites.png");
@@ -190,6 +193,12 @@ i.fas {
   font-size: 2.2rem;
   font-weight: bold;
 }
+.content-resume .content-block .content-body .body-template p.body-title a i {
+  color: #25373d;
+}
+.content-resume .content-block .content-body .body-template p.body-title a i:hover {
+  color: #acc73f;
+}
 .content-resume .content-block .content-body .body-template p.body-subtitle {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -199,4 +208,8 @@ i.fas {
 }
 .content-resume .content-block .content-body .body-template .description {
   padding: 5px 0;
+}
+.content-resume .content-block .content-body .body-template .description ul,
+.content-resume .content-block .content-body .body-template .description ol {
+  font-size: 1.2rem;
 }
