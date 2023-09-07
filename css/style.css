@@ -86,6 +86,7 @@ p {
 }
 .top-header-resume .name-header h3 {
   font-size: 3.5rem;
+  font-style: italic;
 }
 .top-header-resume .name-header p {
   font-size: 2em;
